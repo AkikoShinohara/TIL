@@ -95,8 +95,7 @@
  ***translateZ(-10px)の方がtranslateZ(-1px)より視覚効果が大きい事***
 
 ```.parallax_layerback {
-  transform: translateZ(-10px) scale(11);
-}
+  transform: translateZ(-10px) scale(11);}
 
 
 
