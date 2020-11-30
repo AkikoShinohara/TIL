@@ -81,8 +81,7 @@
   parallaxの世界では大小に変化する必要は無いので、元のサイズで見える様に要素にscale()変換を適用する
 - scale係数とは → 奥に移動した分だけ、小さくなった要素を、元のサイズに戻すことができるプロパティ
   ``` .parallax_layerback {
-  transform: translateZ(-1px) scale(2);
-}```
+  transform: translateZ(-1px) scale(2);}
 
 
  
