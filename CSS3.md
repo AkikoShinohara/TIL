@@ -82,7 +82,7 @@
 - scale係数とは → 奥に移動した分だけ、小さくなった要素を、元のサイズに戻すことができるプロパティ
  
  ***スケール係数は1 + （translateZ * -1） / perspective」で計算できる***
-  ``` .parallax_layerback {
+.parallax_layerback {
   transform: translateZ(-1px) scale(2);}
 - ex ```ビューポートperspectiveが「1px」に設定されていて、要素を奥行Z軸に沿って-2px移動する場合、補正倍率は「3」  1+-2×-1÷1＝3、scale係数は3
         .parallax_layerback {
