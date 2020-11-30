@@ -80,7 +80,8 @@
   自然界でも、遠くにいる人が小さく見え近くにいる人が大きく見えるのと一緒
   parallaxの世界では大小に変化する必要は無いので、元のサイズで見える様に要素にscale()変換を適用する
 - scale係数とは → 奥に移動した分だけ、小さくなった要素を、元のサイズに戻すことができるプロパティ
-  ***スケール係数は1 + （translateZ * -1） / perspective」で計算できる***
+ 
+ ***スケール係数は1 + （translateZ * -1） / perspective」で計算できる***
   ``` .parallax_layerback {
   transform: translateZ(-1px) scale(2);}
   
