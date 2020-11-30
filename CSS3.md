@@ -83,10 +83,10 @@
  
  ***スケール係数は1 + （translateZ * -1） / perspective」で計算できる***
   ``` .parallax_layerback {
-  transform: translateZ(-1px) scale(2);}```
+  transform: translateZ(-1px) scale(2);}
 - ex ```ビューポートperspectiveが「1px」に設定されていて、要素を奥行Z軸に沿って-2px移動する場合、補正倍率は「3」  1+-2×-1÷1＝3、scale係数は3
         .parallax_layerback {
-         transform: translateZ(-2px) scale(3);}```
+         transform: translateZ(-2px) scale(3);}
  
 ### レイヤー速度の制御
 - レイヤーの速度は、遠近法とZ変換値の組み合わせによって制御される
