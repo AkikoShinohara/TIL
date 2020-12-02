@@ -94,7 +94,7 @@
 　つまりマイナス値が大きくなるほど、その視差効果がより顕著に出る
  ***translateZ(-10px)の方がtranslateZ(-1px)より視覚効果が大きい事***
 
-`.parallax_layerback {
+.parallax_layerback {
   transform: translateZ(-10px) scale(11);}
 
 
