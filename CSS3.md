@@ -108,6 +108,7 @@
    - 要素が奥にある程scale係数で大きさを維持する
    - 要素を連続で表現する場合はグループ化しておく事
 
+[![Image from Gyazo](https://i.gyazo.com/b043b4851b20717185fe5e7be71a79ad.gif)](https://gyazo.com/b043b4851b20717185fe5e7be71a79ad)
 
 
 
