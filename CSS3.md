@@ -111,7 +111,7 @@
    - 要素を連続で表現する場合はグループ化しておく事
 
 ***プラグイン使用 Jquery ↓ ***
-[![Image from Gyazo](https://i.gyazo.com/a80ba8b067ff162ea738e287750494fb.gif)](https://gyazo.com/a80ba8b067ff162ea738e287750494fb)
+[![Image](https://i.gyazo.com/a80ba8b067ff162ea738e287750494fb.gif)](https://gyazo.com/a80ba8b067ff162ea738e287750494fb)
 
 
 ***応用なパララックス ↓ ***
