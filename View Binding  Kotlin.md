@@ -44,8 +44,32 @@ binding.button.setOnClickListener { タップされたときの処理 }
 ## FragmentでのViewBindingの使い方
 - Fragment ・・・ Avtivityの上で動くActivityより高機能なActivityみたいなもの。タブのように複数画面をひとつにまとめたようなものを扱う際に使う
 - Fragmentで使うときはこんなこんな風に設定（メモリリークが起きないように）<br>
-※ メモリリークとは・・・ メモリの空き領域が減っていく・確保したメモリ領域の開放忘れが原因（プログラムさんが「ここは僕が使うよ！」と場所取りしたメモリの場所を「もう使わないから他の人が使っていいよ！」にするのを忘れちゃったのが原因で、他の人が使えない状態が続くことによって、メモリの使える場所が減っていくこと。をさす）
+※ メモリリークとは・・・ メモリの空き領域が減っていく・確保したメモリ領域の開放忘れが原因（プログラムさんが「ここは僕が使うよ！」と場所取りしたメモリの場所を「もう使わないから他の人が使っていいよ！」にするのを忘れちゃったのが原因で、他の人が使えない状態が続くことによって、メモリの使える場所が減っていくこと。をさす
+- 下記の準備ができると、UIに追加したTextView（idはname)やButton(idはbutton)にはActivityの時と同じようにアクセスできる
    
+   
+```kotlin:HomeFragment.kt
+private var _binding: ResultProfileBinding? = null
+private val binding get() = _binding!!
+
+override fun onCreateView(
+        inflater: LayoutInflater,
+        container: ViewGroup?,
+        savedInstanceState: Bundle?
+): View? {
+        _binding = ResultProfileBinding.inflate(inflater, container, false)
+        val view = binding.root
+        return view
+}
+
+override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
+}
+
+```
+
+
 
 
 
