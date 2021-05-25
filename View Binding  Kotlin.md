@@ -1,9 +1,9 @@
 
-# View Binding について
+## View Binding について
 - View Bindingを使用することによって、[ FindViewById ]を使わずにUI画面のView（部品）に直接アクセスすることが可能
 - Android Studio 3.6以降で使うことができ、インストールは不要（既にインストール済み）
 
-# View Binding を使う準備
+## View Binding を使う準備
 - View Binding は自動でXMLレイアウトファイルがあれば、ファイル内に ** tools:viewBindingIgnore="true" ** と記述する
 - 自動生成されるクラス（バインディングクラス）の名前は、XMLファイル名（snake_case）をPastalCase(UpperCamelCase)に変換してからBindingにくっつけたものになる
 　- ex: ** activity_main.xmlファイル **からは ** ActivityMainBinding ** クラスが生成される
@@ -42,7 +42,9 @@ binding.button.setOnClickListener { タップされたときの処理 }
 ```
 
 ## FragmentでのViewBindingの使い方
-- Fragment ・・・
+- Fragment ・・・ Avtivityの上で動くActivityより高機能なActivityみたいなもの。タブのように複数画面をひとつにまとめたようなものを扱う際に使う
+- Fragmentで使うときはこんなこんな風に設定（メモリリークが起きないように）
+※ メモリリークとは・・・ メモリの空き領域が減っていく・確保したメモリ領域の開放忘れが原因（プログラムさんが「ここは僕が使うよ！」と場所取りしたメモリの場所を「もう使わないから他の人が使っていいよ！」にするのを忘れちゃったのが原因で、他の人が使えない状態が続くことによって、メモリの使える場所が減っていくこと。をさす）
    
 
 
