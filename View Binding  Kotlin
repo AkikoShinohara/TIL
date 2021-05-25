@@ -1,8 +1,8 @@
-## View Binding について
+# View Binding について
 - View Bindingを使用することによって、[ FindViewById ]を使わずにUI画面のView（部品）に直接アクセスすることが可能
 - Android Studio 3.6以降で使うことができ、インストールは不要（既にインストール済み）
 
-## View Binding を使う準備
+# View Binding を使う準備
 - View Binding は自動でXMLレイアウトファイルがあれば、ファイル内に ** tools:viewBindingIgnore="true" ** と記述する
 - 自動生成されるクラス（バインディングクラス）の名前は、XMLファイル名（snake_case）をPastalCase(UpperCamelCase)に変換してからBindingにくっつけたものになる
 　- ex: ** activity_main.xmlファイル **からは ** ActivityMainBinding ** クラスが生成される
