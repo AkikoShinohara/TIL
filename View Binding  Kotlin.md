@@ -70,6 +70,11 @@ override fun onDestroyView() {
 ```
 
 
+```kotlin:HomeFragment.kt
+binding.name.text = "文字列"
+binding.button.setOnClickListener { タップされたときの処理 }
+```
+
 
 
 
