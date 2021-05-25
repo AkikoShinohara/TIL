@@ -1,3 +1,4 @@
+
 # View Binding について
 - View Bindingを使用することによって、[ FindViewById ]を使わずにUI画面のView（部品）に直接アクセスすることが可能
 - Android Studio 3.6以降で使うことができ、インストールは不要（既にインストール済み）
